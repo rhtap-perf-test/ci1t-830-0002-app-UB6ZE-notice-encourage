@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-uqra
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/stonesoup_perfscale/ci1t-830-0002-tenant/ci1t-830-0002-app/devfile-sample-uqra@sha256:a086849b21968d38cf3d2ced9ce7f25d6f37fbe1eebf1e968ce1a45f62cb021c
+        name: my-nodejs
+        resources: {}
+status: {}
